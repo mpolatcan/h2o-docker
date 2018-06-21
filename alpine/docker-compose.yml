@@ -1,0 +1,13 @@
+version: "3.0"
+services:
+  h2o-master:
+    image: mpolatcan/h2o-docker:alpine
+    container_name: h2o-master
+    hostname: h2o-master
+    ports:
+      - 8080:54321
+
+  h2o:
+    image: mpolatcan/h2o-docker:alpine
+    ports:
+      - 54321
